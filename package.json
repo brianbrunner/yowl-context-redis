@@ -1,0 +1,34 @@
+{
+  "name": "yowl-context-redis",
+  "version": "0.1.0",
+  "description": "Yowl context manager for redis",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianbrunner/yowl-context-redis.git"
+  },
+  "keywords": [
+    "chatbot",
+    "yowl"
+  ],
+  "author": "Brian Brunner (brian.brunner@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianbrunner/yowl-context-redis/issues"
+  },
+  "homepage": "https://github.com/brianbrunner/yowl-context-redis#readme",
+  "dependencies": {
+    "redis": "^2.6.0-2"
+  },
+  "devDependencies": {
+    "jshint": "latest",
+    "mocha": "latest"
+  },
+  "jshintConfig": {
+    "node": true,
+    "proto": true
+  }
+}
