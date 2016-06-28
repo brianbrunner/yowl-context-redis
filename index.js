@@ -1,6 +1,7 @@
 var redis = require('redis');
 
 module.exports = function(options) {
+  options = (typeof options !== "undefined") ? options : {};
   var redisOptions = options.redis;
   var prefix = (typeof options.prefix === 'string') ? options.prefix : 'yowl-session:';
 
@@ -24,7 +25,7 @@ module.exports = function(options) {
       }
 
       var session = (typeof jsonSession === "string") ? JSON.parse(jsonSession) : {};
-      context.mergeSession(session.data);
+      context.mergeSession(session);
       next(null, function(context, event, next) {
         var jsonSession = context.jsonDumpSession();
         client.set(prefix + id, jsonSession, next);
