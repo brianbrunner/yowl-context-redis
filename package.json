@@ -1,14 +1,14 @@
 {
-  "name": "yowl-context-redis",
+  "name": "yowl-session-redis",
   "version": "0.1.0",
-  "description": "Yowl context manager for redis",
+  "description": "Yowl session manager for redis",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js lib/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brianbrunner/yowl-context-redis.git"
+    "url": "git+https://github.com/brianbrunner/yowl-session-redis.git"
   },
   "keywords": [
     "chatbot",
@@ -17,9 +17,9 @@
   "author": "Brian Brunner (brian.brunner@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brianbrunner/yowl-context-redis/issues"
+    "url": "https://github.com/brianbrunner/yowl-session-redis/issues"
   },
-  "homepage": "https://github.com/brianbrunner/yowl-context-redis#readme",
+  "homepage": "https://github.com/brianbrunner/yowl-session-redis#readme",
   "dependencies": {
     "redis": "^2.6.0-2"
   },

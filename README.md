@@ -1,1 +1,1 @@
-# yowl-context-redis
+# yowl-session-redis
